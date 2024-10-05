@@ -6,6 +6,6 @@ block content
   a(href="/new") Send new message
   each message in messages
     div
-      h2= message.user 
+      h2= message.username 
       p= message.text 
-      p= message.added
+      p= message.created_at
