@@ -1,3 +1,4 @@
+require('dotenv').config();
 require('express-async-errors');
 const createError = require('http-errors');
 const express = require('express');
@@ -5,7 +6,6 @@ const path = require('path');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-const { error } = require('console');
 
 const app = express();
 

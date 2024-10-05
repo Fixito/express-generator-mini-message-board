@@ -3,15 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "dotenvx run -- node ./bin/www",
-    "devstart": "dotenvx run -- nodemon ./bin/www",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
     "serverstart": "set DEBUG=mini-message-board:* & npm run devstart",
-    "seed": "dotenvx run -- node ./db/seed.js"
+    "seed": "node ./db/seed.js"
   },
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.14.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "express-async-errors": "^3.1.1",
     "http-errors": "~1.6.3",
